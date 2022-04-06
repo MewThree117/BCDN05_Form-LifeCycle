@@ -76,7 +76,7 @@ export function FormDK(props) {
 
     return (
         <div className="card mt-5">
-            <form onSubmit={(e) => handleSubmit(e)}>
+            <form className='form_sv' onSubmit={(e) => handleSubmit(e)}>
                 <div className="card-header bg-dark text-white">
                     <div>Form Đăng Ký</div>
                 </div>
@@ -106,8 +106,8 @@ export function FormDK(props) {
                         </div>
                     </div>
                     <div>
-                        <button className='btn btn-success mr-3'>Thêm Sinh Viên</button>
-                        <button className='btn btn-primary' type='button' onClick={() => {
+                        <button className='btn btn-success mr-2'>Thêm Sinh Viên</button>
+                        <button className='btn btn-primary mr-2' type='button' onClick={() => {
                             let action = {
                                 type: 'CAP_NHAT',
                                 capNhatSV: newValues
